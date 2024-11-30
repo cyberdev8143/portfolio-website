@@ -1,0 +1,420 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif; /* High-end font for a sleek look */
+  background-color: #f4f4f9; /* Soft light background */
+  color: #333;
+  line-height: 1.7;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 600;
+  color: #00bcf2;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: #00bcf2; /* Soft light-blue on hover */
+  text-decoration: underline;
+}
+
+/* Header Styling */
+header {
+  background-color: #1a1a1a; /* Deep charcoal gray background */
+  color: white;
+  padding: 120px 0; /* Spacious header */
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Larger shadow for depth */
+}
+
+header h1 {
+  font-size: 4rem; /* Larger font for emphasis */
+  letter-spacing: 3px; /* Wide spacing for elegance */
+  margin-bottom: 15px;
+  text-transform: uppercase; /* Stronger visual appeal */
+  font-weight: 700;
+}
+
+header p {
+  font-size: 1.4rem;
+  margin-bottom: 30px;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #00bcf2;
+  transform: scale(1.1); /* Slight scaling effect */
+}
+
+/* About Section */
+#about {
+  background: linear-gradient(45deg, #ffffff, #e0e0e0);
+  padding: 100px 0;
+  text-align: center;
+}
+
+#about h2 {
+  font-size: 2.8rem;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+#about p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin: 0 auto;
+  max-width: 850px;
+  font-weight: 300;
+  text-align: center;
+}
+
+/* Portfolio Section */
+#portfolio {
+  background-color: #ffffff;
+  padding: 100px 0;
+  text-align: center;
+}
+
+#portfolio h2 {
+  font-size: 2.8rem;
+  margin-bottom: 50px;
+  letter-spacing: 2px;
+}
+
+.project-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Larger shadow for more depth */
+  padding: 40px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card:hover {
+  transform: translateY(-20px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.project-card img:hover {
+  transform: scale(1.1);
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 40px;
+  justify-content: center;
+}
+
+/* Container for the Projects Section */
+#projects {
+  background-color: #f9f9f9; /* Light background for the section */
+  padding: 80px 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Heading for the Project Section */
+#projects h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: #333;
+}
+
+/* Card Container */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(250px, 1fr)
+  ); /* Auto-fill cards in columns, responsive */
+  gap: 30px;
+  justify-items: center;
+}
+
+/* Individual Project Card */
+.project-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+}
+
+.project-card h3 {
+  font-size: 1.6rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Button Styling */
+.project-card button {
+  background-color: #027699;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.project-card button:hover {
+  background-color: #00bcf2;
+  transform: scale(1.05);
+}
+
+/* Hover Effect for Card */
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  #projects h2 {
+    font-size: 2rem;
+  }
+
+  .project-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .project-card p {
+    font-size: 0.9rem;
+  }
+
+  .project-card button {
+    font-size: 0.9rem;
+  }
+}
+
+/* Technologies Section Styling */
+#technologies {
+  background-color: #333; /* Dark background for contrast */
+  padding: 50px 20px;
+  color: white;
+  text-align: center;
+}
+
+#technologies h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #00bcf2;
+}
+
+/* Scrollable Cards Container */
+.scrolling-cards {
+  display: flex;
+  gap: 20px; /* Space between cards */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  animation: scrollTechnologies 15s linear infinite; /* Animation for scrolling */
+}
+
+/* Individual Technology Card */
+.tech-card {
+  background-color: #027699;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  text-align: center;
+  min-width: 150px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Scrolling Animation */
+@keyframes scrollTechnologies {
+  0% {
+    transform: translateX(0); /* Start at the left */
+  }
+  100% {
+    transform: translateX(20%); /* Move to the left completely */
+  }
+}
+
+/* For small screens */
+@media (max-width: 768px) {
+  .tech-card {
+    font-size: 1rem; /* Adjust font size for mobile */
+    padding: 10px 20px;
+  }
+
+  #technologies h2 {
+    font-size: 1.5rem; /* Smaller heading size on mobile */
+  }
+}
+
+/* Contact Section Styling */
+#contact {
+  background-color: #f1f1f1; /* Light background for contrast */
+  padding: 100px 0; /* Ample padding */
+  text-align: center;
+}
+
+form {
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  gap: 30px; /* Increased gap for better spacing */
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1); /* Softer, larger shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center; /* Center text inside the form */
+}
+
+form:hover {
+  transform: translateY(-5px); /* Subtle hover effect for the form */
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15); /* Larger shadow on hover */
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 18px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  text-align: center; /* Center the text inside the input fields */
+  transition: border-color 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #00bcf2; /* Accent color on focus */
+  outline: none; /* Removes the default outline */
+}
+
+form button {
+  background-color: #027699;
+  color: white;
+  border: none;
+  padding: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  text-align: center; /* Center the button text */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+form button:hover {
+  background-color: #00bcf2; /* Slightly light shade on hover */
+  transform: scale(1.05); /* Button scales up slightly */
+}
+
+/* Responsive Design for Contact Section */
+@media (max-width: 768px) {
+  form {
+    padding: 25px; /* Reduce padding on smaller screens */
+  }
+
+  form input,
+  form textarea {
+    font-size: 1rem; /* Slightly smaller text on mobile */
+  }
+
+  form button {
+    font-size: 1.1rem; /* Button font size adjustment */
+  }
+}
+
+/* Footer Styling */
+footer {
+  background-color: #1a1a1a;
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+  font-size: 1.2rem;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #00bcf2;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  header h1 {
+    font-size: 3rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  form {
+    width: 100%;
+  }
+}
